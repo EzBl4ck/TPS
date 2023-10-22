@@ -1,11 +1,8 @@
 package esercizi;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Random;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/Esercizio2")
 public class Esercizio2 extends HttpServlet {
 	
+	private static final long serialVersionUID = 1L;
 	int nTentativi = 0;
 	ArrayList<Integer> numeri;
 	final int MAX_TENTATIVI = 10;
@@ -24,7 +22,6 @@ public class Esercizio2 extends HttpServlet {
 		Random random = new Random();
 		num = random.nextInt(0, 1001);
 		numeri = new ArrayList<>(10);
-		PrintWriter out = response.getWriter();
 		writeForm(response);
 	}
 	

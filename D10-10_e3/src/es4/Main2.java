@@ -5,11 +5,7 @@ import java.io.FileInputStream;
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.security.DigestInputStream;
 import java.security.MessageDigest;
-import java.util.Base64;
 
 public class Main2 {
 	public static void main(String[] args) {

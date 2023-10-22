@@ -18,7 +18,7 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 
 public class Cifra {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		final String algorithm = "AES";
 		final Scanner in = new Scanner(System.in);
 		
@@ -27,7 +27,7 @@ public class Cifra {
 		
 		System.out.print("Dimensione chiave in bit: ");
 		int keyLength = in.nextInt();
-		
+		Socket toServer = null;
 		try {
 			Key key = getSecureRandomKey(algorithm, keyLength);
 			Cipher cipher = Cipher.getInstance(algorithm+"/ECB/PKCS5Padding");
@@ -36,7 +36,7 @@ public class Cifra {
 			String cifrato_base64 = Base64.getEncoder().encodeToString(cifrato);
 			String key_base64 = Base64.getEncoder().encodeToString(key.getEncoded());
 			
-			Socket toServer = new Socket("localhost", 60000);
+			toServer = new Socket("localhost", 60000);
 			PrintWriter pw = new PrintWriter(toServer.getOutputStream(), true);
 			pw.println(key_base64);
 			pw.println(cifrato_base64);
@@ -59,8 +59,11 @@ public class Cifra {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			in.close();
+			toServer.close();
 		}
-		in.close();
+		
 	}
 	
 	private static Key getSecureRandomKey(String cipher, int keySize) throws NoSuchAlgorithmException {

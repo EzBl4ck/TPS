@@ -4,10 +4,7 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.Base64;
-import java.util.Scanner;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -50,6 +47,7 @@ public class Cifra {
 		outFile.close();
 		out.close();
 		toRizzy.close();
+		ifstream.close();
 	}
 
 }
