@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Esercizio2 extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
+	
 	int nTentativi = 0;
 	ArrayList<Integer> numeri;
 	final int MAX_TENTATIVI = 10;
@@ -50,7 +51,10 @@ public class Esercizio2 extends HttpServlet {
 			return;
 		}
 		int guess = Integer.parseInt(request.getParameter("numero"));
-		nTentativi++;
+		synchronized (this) {
+			nTentativi++;
+		}
+		
 		if(guess == num) {
 			response.getWriter().println("Bravo! Hai indovinato utilizzando "+ nTentativi +" tentativi");
 		} else if(guess < num) {

@@ -42,7 +42,6 @@
   examples web application, do not forget to remove the <!.. ..> that surrounds
   them. You will also need to set the passwords to something appropriate.
 -->
-
   <role rolename="tomcat"/>
   <role rolename="manager-gui"/>
   <user password="tomcat" roles="tomcat, manager-gui" username="tomcat"/>

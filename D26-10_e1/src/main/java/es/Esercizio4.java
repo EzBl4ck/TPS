@@ -30,7 +30,7 @@ public class Esercizio4 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String path = request.getServletContext().getRealPath("/");
 		response.getWriter().println(path);
-		FileOutputStream fout = new  FileOutputStream("pippo.txt");
+		//FileOutputStream fout = new  FileOutputStream("pippo.txt");
 		
 		
 		
