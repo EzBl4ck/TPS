@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corso>
+    <nome>TPS</nome>
+    <argomenti>
+        <argomento>Socket TCP</argomento>
+        <argomento>Socket UDP</argomento>
+        <argomento>Crittografia</argomento>
+        <argomento>Applicazioni web</argomento>
+    </argomenti>
+    <ore_corso>60</ore_corso>
+    <ripartizione_ore>
+        <lezione>
+            <titolo>Introduzione</titolo>
+            <ore>2</ore>
+        </lezione>
+        <lezione>
+            <titolo>Socket TCP</titolo>
+            <ore>12</ore>
+        </lezione>
+        <lezione>
+            <titolo>Socket UDP</titolo>
+            <ore>10</ore>
+        </lezione>
+        <lezione>
+            <titolo>Crittografia</titolo>
+            <ore>14</ore>
+        </lezione>
+        <lezione>
+            <titolo>Applicazioni web</titolo>
+            <ore>12</ore>
+        </lezione>
+    </ripartizione_ore>
+    <docenti>
+        <docente>
+            <nome>Prof. Mario Rossi</nome>
+        </docente>
+        <docente>
+            <nome>Dott.ssa Laura Bianchi</nome>
+        </docente>
+    </docenti>
+    <studenti>
+        <studente>
+            <nome>Mario</nome>
+            <cognome>Rossi</cognome>
+            <matricola>12345</matricola>
+        </studente>
+        <studente>
+            <nome>Laura</nome>
+            <cognome>Bianchi</cognome>
+            <matricola>67890</matricola>
+        </studente>
+    </studenti>
+</corso>
+

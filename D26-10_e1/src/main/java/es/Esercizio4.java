@@ -1,11 +1,8 @@
 package es;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.ServletContext;
+import java.util.Scanner;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -28,10 +25,16 @@ public class Esercizio4 extends HttpServlet {
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String path = request.getServletContext().getRealPath("/");
-		response.getWriter().println(path);
-		//FileOutputStream fout = new  FileOutputStream("pippo.txt");
-		
+		String path = this.getServletConfig().getServletContext().getRealPath("WEB-INF") + "/" + filename;
+		File file = new File(path);
+		if(!file.exists()) {
+			file.createNewFile();
+		}
+		Scanner ifstream = new Scanner(file);	
+		while(ifstream.hasNextLine()) {
+			response.getWriter().println(ifstream.nextLine());
+		}
+		ifstream.close();
 		
 		
 	}

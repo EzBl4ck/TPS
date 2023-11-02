@@ -1,0 +1,62 @@
+{
+    "corso": {
+        "nome": "TPS",
+        "argomenti": {
+            "argomento": [
+                "Socket TCP",
+                "Socket UDP",
+                "Crittografia",
+                "Applicazioni web"
+            ]
+        },
+        "ore_corso": 60,
+        "ripartizione_ore": {
+            "lezione": [
+                {
+                    "titolo": "Introduzione",
+                    "ore": 2
+                },
+                {
+                    "titolo": "Socket TCP",
+                    "ore": 12
+                },
+                {
+                    "titolo": "Socket UDP",
+                    "ore": 10
+                },
+                {
+                    "titolo": "Crittografia",
+                    "ore": 14
+                },
+                {
+                    "titolo": "Applicazioni web",
+                    "ore": 12
+                }
+            ]
+        },
+        "docenti": {
+            "docente": [
+                {
+                    "nome": "Prof. Mario Rossi"
+                },
+                {
+                    "nome": "Dott.ssa Laura Bianchi"
+                }
+            ]
+        },
+        "studenti": {
+            "studente": [
+                {
+                    "nome": "Mario",
+                    "cognome": "Rossi",
+                    "matricola": 12345
+                },
+                {
+                    "nome": "Laura",
+                    "cognome": "Bianchi",
+                    "matricola": 67890
+                }
+            ]
+        }
+    }
+}
