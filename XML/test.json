@@ -3,45 +3,26 @@
         "nome": "TPS",
         "argomenti": {
             "argomento": [
-                "Socket TCP",
-                "Socket UDP",
-                "Crittografia",
-                "Applicazioni web"
+                {"nome": "Socket TCP"},
+                {"nome": "Socket UDP"},
+                {"nome": "Crittografia"},
+                {"nome": "Applicazioni web"}
             ]
         },
-        "ore_corso": 60,
-        "ripartizione_ore": {
+        "totale_ore": "60",
+        "lezioni": {
             "lezione": [
-                {
-                    "titolo": "Introduzione",
-                    "ore": 2
-                },
-                {
-                    "titolo": "Socket TCP",
-                    "ore": 12
-                },
-                {
-                    "titolo": "Socket UDP",
-                    "ore": 10
-                },
-                {
-                    "titolo": "Crittografia",
-                    "ore": 14
-                },
-                {
-                    "titolo": "Applicazioni web",
-                    "ore": 12
-                }
+                {"titolo": "Introduzione", "durata": "2"},
+                {"titolo": "Socket TCP", "durata": "12"},
+                {"titolo": "Socket UDP", "durata": "10"},
+                {"titolo": "Crittografia", "durata": "14"},
+                {"titolo": "Applicazioni web", "durata": "12"}
             ]
         },
         "docenti": {
             "docente": [
-                {
-                    "nome": "Prof. Mario Rossi"
-                },
-                {
-                    "nome": "Dott.ssa Laura Bianchi"
-                }
+                {"nome": "Stefan"},
+                {"nome": "Piero"}
             ]
         },
         "studenti": {
@@ -49,14 +30,15 @@
                 {
                     "nome": "Mario",
                     "cognome": "Rossi",
-                    "matricola": 12345
+                    "matricola": "12345"
                 },
                 {
-                    "nome": "Laura",
-                    "cognome": "Bianchi",
-                    "matricola": 67890
+                    "nome": "Matteo",
+                    "cognome": "Salvini",
+                    "matricola": "69420"
                 }
             ]
         }
     }
 }
+

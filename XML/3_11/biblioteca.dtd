@@ -1,0 +1,11 @@
+<!ELEMENT biblioteca (libri)>
+<!ELEMENT libri (libro*)>
+<!ELEMENT libro (titolo, genere, autori, codice)>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT genere (#PCDATA)>
+<!ELEMENT autori (autore+)>
+<!ELEMENT codice (#PCDATA)>
+<!ELEMENT autore (nome, cognome, eta)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT cognome (#PCDATA)>
+<!ELEMENT eta (#PCDATA)>

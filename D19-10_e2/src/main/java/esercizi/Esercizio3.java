@@ -22,18 +22,18 @@ public class Esercizio3 extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		float n1 = Float.parseFloat(request.getParameter("num1"));
 		float n2 = Float.parseFloat(request.getParameter("num2"));
-		char op = request.getParameter("op").charAt(0);
+		String op = request.getParameter("op");
 		
 		switch(op) {
-			case '+' -> out.println(n1 + n2);
-			case '-' -> out.println(n1 - n2);
-			case '/' -> {
+			case "+" -> out.println(n1 + n2);
+			case "-" -> out.println(n1 - n2);
+			case "/" -> {
 				if(n2 != 0)
 					out.println(n1 / n2);
 				else 
 					out.println("Divisione per 0");
 			}
-			case '*' -> out.println(n1 * n2);
+			case "*" -> out.println(n1 * n2);
 			default -> out.println("Operazione invalida");
 		}
 	}

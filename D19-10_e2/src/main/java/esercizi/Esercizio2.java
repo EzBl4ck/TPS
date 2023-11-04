@@ -41,7 +41,7 @@ public class Esercizio2 extends HttpServlet {
 				+ "	</form>\n"
 				+ "	" + num +"\n" //questa linea è solo per testing 
 				+ "</body>\n"
-				+ "</htm");
+				+ "</html>");
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

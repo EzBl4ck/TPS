@@ -2,40 +2,48 @@
 <corso>
     <nome>TPS</nome>
     <argomenti>
-        <argomento>Socket TCP</argomento>
-        <argomento>Socket UDP</argomento>
-        <argomento>Crittografia</argomento>
-        <argomento>Applicazioni web</argomento>
+        <argomento>
+		<nome>Socket TCP</nome>
+	</argomento>
+	<argomento>
+		<nome>Socket UDP</nome>
+	</argomento>
+	<argomento>
+		<nome>Crittografia</nome>
+	</argomento>
+	<argomento>
+		<nome>Applicazioni web</nome>
+	</argomento>
     </argomenti>
-    <ore_corso>60</ore_corso>
-    <ripartizione_ore>
+    <totale_ore>60</totale_ore>
+    <lezioni>
         <lezione>
             <titolo>Introduzione</titolo>
-            <ore>2</ore>
+            <durata>2</durata>
         </lezione>
         <lezione>
             <titolo>Socket TCP</titolo>
-            <ore>12</ore>
+            <durata>12</durata>
         </lezione>
         <lezione>
             <titolo>Socket UDP</titolo>
-            <ore>10</ore>
+            <durata>10</durata>
         </lezione>
         <lezione>
             <titolo>Crittografia</titolo>
-            <ore>14</ore>
+            <durata>14</durata>
         </lezione>
         <lezione>
             <titolo>Applicazioni web</titolo>
-            <ore>12</ore>
+            <durata>12</durata>
         </lezione>
-    </ripartizione_ore>
+    </lezioni>
     <docenti>
         <docente>
-            <nome>Prof. Mario Rossi</nome>
+            <nome>Stefan</nome>
         </docente>
         <docente>
-            <nome>Dott.ssa Laura Bianchi</nome>
+            <nome>Piero</nome>
         </docente>
     </docenti>
     <studenti>
@@ -45,9 +53,9 @@
             <matricola>12345</matricola>
         </studente>
         <studente>
-            <nome>Laura</nome>
-            <cognome>Bianchi</cognome>
-            <matricola>67890</matricola>
+            <nome>Matteo</nome>
+            <cognome>Salvini</cognome>
+            <matricola>69420</matricola>
         </studente>
     </studenti>
 </corso>

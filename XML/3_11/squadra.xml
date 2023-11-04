@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE squadra SYSTEM "squadra.dtd">
+<squadra>
+    <nome>Juminter</nome>
+    <serie>C1</serie>
+    <presidente>Mario Rossi</presidente>
+    <allenatore>Giuseppe Bianchi</allenatore>
+    <giocatori>
+        <giocatore>
+            <nome_giocatore>Leonardo Da Vinci</nome_giocatore>
+            <ruoli>
+                <ruolo>Terzino</ruolo>
+            </ruoli>
+            <titolare>true</titolare>
+        </giocatore>
+        <giocatore>
+            <nome_giocatore>Cristoforo Colombo</nome_giocatore>
+            <ruoli>
+                <ruolo>Attaccante</ruolo>
+                <ruolo>Mezzala</ruolo>
+            </ruoli>
+            <titolare>false</titolare>
+        </giocatore>
+        <giocatore>
+            <nome_giocatore>Giulio Cesare</nome_giocatore>
+            <ruoli>
+                <ruolo>Difensore</ruolo>
+            </ruoli>
+            <titolare>true</titolare>
+        </giocatore>
+    </giocatori>
+</squadra>
