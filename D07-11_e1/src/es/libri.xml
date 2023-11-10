@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libri>
+	<libro id='10'>
+		<titolo>The Lord of The Ring</titolo>
+		<autore>Tolkien</autore>
+	</libro>
+	<libro id='11'>
+		<titolo>I segreti della pietra rossa</titolo>
+		<autore>Mojang</autore>
+	</libro>o
+	<libro id='12'>
+		<titolo>Percy Jackson</titolo>
+		<autore>Riordan</autore>
+	</libro>
+</libri>
