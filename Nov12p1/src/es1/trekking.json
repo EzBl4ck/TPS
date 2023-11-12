@@ -1,0 +1,29 @@
+{
+    "trekking-all": {
+        "trekking":[
+            {
+                "destinazione": "Milano",
+                "data_partenza": "10/10/23",
+                "giorni_durata": 5,
+                "costo": 50,
+                "guida": {
+                    "nome": "Paolo",
+                    "cognome": "Rossi",
+                    "email": "paolo.rossi@aaaa.it"
+                },
+                "min_partecipanti": 10,
+                "tappe": {
+                    "tappa": [
+                        {
+                            "partenza": "Roma",
+                            "destinazione_tappa": "Milano",
+                            "distanza_km": 500,
+                            "dislivello": 0
+                        }
+                    ]
+                }
+
+            }
+        ]
+    }
+}

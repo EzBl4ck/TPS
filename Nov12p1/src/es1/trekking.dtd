@@ -1,0 +1,17 @@
+<!ELEMENT trekking-all (trekking*)>
+<!ELEMENT destinazione (#PCDATA)>
+<!ELEMENT data_partenza (#PCDATA)>
+<!ELEMENT giorni_durata (#PCDATA)>
+<!ELEMENT costo (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT cognome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT guida (nome, cognome, email)>
+<!ELEMENT min_partecipanti (#PCDATA)>
+<!ELEMENT partenza (#PCDATA)>
+<!ELEMENT destinazione_tappa (#PCDATA)>
+<!ELEMENT distanza_km (#PCDATA)>
+<!ELEMENT dislivello (#PCDATA)>
+<!ELEMENT tappa (partenza, destinazione_tappa, distanza_km, dislivello)>
+<!ELEMENT tappe (tappa+)>
+<!ELEMENT trekking (destinazione, data_partenza, giorni_durata, costo, guida, min_partecipanti, tappe)>

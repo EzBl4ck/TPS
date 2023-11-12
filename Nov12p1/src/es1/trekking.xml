@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE trekking-all SYSTEM "trekking.dtd">
+<trekking-all>
+	<trekking>
+		<destinazione>Milano</destinazione>
+		<data_partenza>10/10/23</data_partenza>
+		<giorni_durata>5</giorni_durata>
+		<costo>50</costo>
+		<guida>
+			<nome>Paolo</nome>
+			<cognome>Rossi</cognome>
+			<email>paolo.rossi@aaaa.it</email>
+		</guida>
+		<min_partecipanti>10</min_partecipanti>
+		<tappe>
+			<tappa>
+				<partenza>Roma</partenza>
+				<destinazione_tappa>Milano</destinazione_tappa>
+				<distanza_km>500</distanza_km>
+				<dislivello>0</dislivello>
+			</tappa>
+		</tappe>
+	</trekking>
+</trekking-all>
