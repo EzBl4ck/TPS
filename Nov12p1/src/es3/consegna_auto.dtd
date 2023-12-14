@@ -1,6 +1,0 @@
-<!ELEMENT consegna_auto (mese+)>
-<!ELEMENT mese (modello+)>
-<!ATTLIST mese nome NMTOKEN #REQUIRED>
-<!ELEMENT modello (nome,num)>
-<!ELEMENT nome (#PCDATA)>
-<!ELEMENT num (#PCDATA)>
